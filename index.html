@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <!-- Fontawesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Scroll library: https://michalsnik.github.io/aos/ -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wgth@600display=swap" rel="stylesheet">
+        <!-- Css -->
+        <link rel="stylesheet" href="css/main.css">
+        <title>Portfolio - Kianna Willmore</title>
+    </head>
+
+    <!-- Guide: https://getbootstrap.com/docs/5.3/ -->
+    <body>
+        <header class="header bg-secondary" style="background-image: url(images/header-img-2.png);" role="banner">
+
+            <!-- Skip Links -->
+            <div class="container">
+                <h2 class="h3 text-center text-white" style="padding-top: 10px; margin-bottom: -15px;">Skip Links</h2>
+                <ul class="list-inline skip-links text-center" style="list-style: none; margin-left: 0; padding-top: 20px; font-size: 1.4rem;">
+                    <li class="list-inline-item"><a class="link-underline-light link-underline-opacity-50 text-white" href="#Socials">[ Socials ]</a></li>
+                    <li class="list-inline-item"><a class="link-underline-light link-underline-opacity-50 text-white" href="#Menu">[ Menu ]</a></li>
+                    <li class="list-inline-item"><a class="link-underline-light link-underline-opacity-50 text-white" href="#Portraits">[ Portrait gallery ]</a></li>
+                    <li class="list-inline-item"><a class="link-underline-light link-underline-opacity-50 text-white" href="#Natures">[ Nature gallery ]</a></li>
+                    <li class="list-inline-item"><a class="link-underline-light link-underline-opacity-50 text-white" href="#Architectures">[ Architecture Gallery ]</a></li>
+                </ul>
+            </div>
+
+            <!-- Header content -->
+            <div class="container">
+                <!-- Logo -->
+                <img src="images/placeholder-logo-white-500px.png" style="padding-top: 30px; padding-bottom: 20px; width: 150px;" class="mx-auto d-block" alt="Logo">
+
+                <!-- About -->
+                <p class="text-center fw-bold" style="color: white; padding-left: 14%; padding-right: 14%;">There's beauty in everything around us. From the smallest insects, to the richest landscape. From the people in our society to the environment we live in. No matter what time, what day, what era; I will be here to capture it through stunning immagery, one moment at a time.</p>
+
+                <!-- Social media icons from fontawesome -->
+                <!-- using text-center instead of mx-auto because fontawesome icons are text -->
+                <div id="Socials" class="d-block gap-2 row-gap-2 text-center" alt="Socials" role="link" itemscope itemtype="https://schema.org/SocialMediaPosting">
+                    <a itemprop="url" href="https://twitter.com" class="btn btn-primary mx-auto bg-transparent border-0" role="button" style="font-size: 2rem;"><i class="fa-brands fa-twitter"></i></button></a>
+                    <a itemprop="url" href="https://instagram.com" class="btn btn-primary mx-auto bg-transparent border-0" role="button" style="font-size: 2rem;"><i class="fa-brands fa-instagram"></i></a>
+                    <a itemprop="url" href="https://youtube.com" class="btn btn-primary mx-auto bg-transparent border-0" role="button" style="font-size: 2rem;"><i class="fa-brands fa-youtube"></i></a>
+                    <a itemprop="url" href="https://facebook.com" class="btn btn-primary mx-auto bg-transparent border-0" role="button" style="font-size: 2rem;"><i class="fa-brands fa-facebook"></i></a>
+                    <a itemprop="url" href="mailto:will1117@algonquinlive.com" class="btn btn-primary mx-auto bg-transparent border-0" role="button" style="font-size: 2rem;"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
+                <!-- Navigation that turns into hamburger at medium/small screen width -->
+                <nav id="Menu" class="navbar navbar-expand-lg" role="navigation">
+                    <!-- Container -->
+                    <div class="container-fluid">
+                        <!-- Drop down button. mx-auto centers items -->
+                        <button alt="Menu dropdown" style="margin-bottom: 10px; margin-top: 10px;" class="mx-auto bg-light navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#navbarNavAltMarkup">
+                            <!-- Adds hamburger -->
+                            <span style="padding-left: 40px; padding-right: 40px; font-weight: bold;">Menu</span>
+                        </button>
+
+                        <!-- Drop down items -->
+                        <div alt="Menu items" class="collapse navbar-collapse text-center fw-bold" id="navbarNavAltMarkup">
+                            <div class="navbar-nav nav-pills grid gap-2 row-gap-2 mx-auto">
+                                <a class="nav-link active bg-light mx-auto" style="width: 200px;" href="#" aria-current="page">Portfolio</a>
+                                <a class="nav-link active bg-light mx-auto" style="width: 200px;" href="https://will1117.github.io/mtm6201-midterm/index.html">Home</a>
+                                <a class="nav-link active bg-light mx-auto" style="width: 200px;" href="https://will1117.github.io/mtm6201-midterm/about.html">About</a>
+                                <a class="nav-link active bg-light mx-auto" style="width: 200px;" href="https://will1117.github.io/mtm6201-midterm/contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- Main Content -->
+        <div class="container" role="main" itemscope itemtype="https://schema.org/Photograph">
+
+            <!-- Portraits gallery -->
+            <div alt="portraits gallery" id="Portraits">
+                <h2 data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" class="text-center fw-bold" style="margin-top: 100px;">Portraits</h2>
+
+                <!-- For medium/Large screens, every row has 4 columns (1 per img) with row gaps and centered images. Small screens (mobile) has 2 columns per row -->
+                <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 row-gap-3 text-center" style="justify-content: space-between; margin-top: 50px; width: auto;">
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v1.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v1.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v1.jpg" alt="portrait-series-v1">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v15.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v15.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v15.jpg" alt="portrait-series-v15">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v2.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v2.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v2.jpg" alt="portrait-series-v2">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v10.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v10.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v10.jpg" alt="portrait-series-v10">
+                    </picture>
+
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v7.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v7.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v7.jpg" alt="portrait-series-v7">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v8.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v8.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v8.jpg" alt="portrait-series-v8">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v9.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v9.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v9.jpg" alt="portrait-series-v9">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v12.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v12.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v12.jpg" alt="portrait-series-v12">
+                    </picture>
+                </div>
+
+                <!-- Expanded content -->
+                <!-- AOS animations are only playing at small width size? Might be a clipping issue and animations are playing before they're seen -->
+                <div class="collapse row row-cols-2 row-cols-md-4 row-cols-lg-4 row-gap-3 text-center" style="justify-content: space-between; margin-top: 18px;" id="PortraitGal">
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v14.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v14.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v14.jpg" alt="portrait-series-v14">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v11.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v11.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v11.jpg" alt="portrait-series-v11">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v13.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v13.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v13.jpg" alt="portrait-series-v13">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v3.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v3.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v3.jpg" alt="portrait-series-v3">
+                    </picture>
+
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/barred.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/barred.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/barred.jpg" alt="barred">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v5.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v5.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v5.jpg" alt="portrait-series-v5">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/portrait-series-v6.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/portrait-series-v6.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/portrait-series-v6.jpg" alt="portrait-series-v6">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/spiral.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/spiral.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/spiral.jpg" alt="spiral">
+                    </picture>
+    
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/dazed-rest.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/dazed-rest.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/dazed-rest.jpg" alt="dazed-rest">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/the-shining.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/the-shining.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/the-shining.jpg" alt="the-shining">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/along-the-wall.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/along-the-wall.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/along-the-wall.jpg" alt="along-the-wall">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700"itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/rooftop-view.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/rooftop-view.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/rooftop-view.jpg" alt="rooftop-view">
+                    </picture>
+                </div>
+
+                <!-- Placing the button underneath the hidden gallery so that it's not in the middle between images -->
+                <div class="container-fluid" alt="Expand gallery" role="button">
+                    <!-- data-bs-toggle=collapse will cause the img gallery to to expand when targeting #portraitgal section -->
+                    <!-- d-grid and mx-auto centers the button -->
+                    <button class="btn btn-primary d-grid mx-auto btn-success opacity-50" style="margin-top: 3%; color: #ace747;" data-bs-toggle="collapse" data-bs-target="#PortraitGal">
+                        <span style="font-weight: bold;" class="mx-auto">Expand Portrait Gallery</span>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Landscape/Wildlife gallery -->
+            <div alt="Nature gallery" id="Natures">
+                <h2 data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" class="text-center fw-bold" style="margin-top: 100px;">Nature</h2>
+
+                <!-- For medium/Large screens, every row has 4 columns (1 per img) with row gaps and centered images. Small screens (mobile) has 2 columns per row -->
+                <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 row-gap-3 text-center" style="justify-content: space-between; margin-top: 50px;">
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/cherries.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/cherries.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/cherries.jpg" alt="cherries">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/deck-v2.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/deck-v2.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/deck-v2.jpg" alt="deck-v2">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/delicate.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/delicate.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/delicate.jpg" alt="delicate">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/dock.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/dock.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/dock.jpg" alt="dock">
+                    </picture>
+
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/flag.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/flag.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/flag.jpg" alt="flag">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/flame.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/flame.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/flame.jpg" alt="flame">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/forest-v1.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/forest-v1.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/forest-v1.jpg" alt="forest-v1">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/forest-v2.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/forest-v2.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/forest-v2.jpg" alt="forest-v2">
+                    </picture>
+                </div>
+
+                <!-- Expanded content -->
+                <!-- AOS animations are only playing at small width size? Might be a clipping issue and animations are playing before they're seen -->
+                <div class="collapse row row-cols-2 row-cols-md-4 row-cols-lg-4 row-gap-3 text-center" style="justify-content: space-between; margin-top: 18px;" id="NatureGal">
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/forest-v3.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/forest-v3.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/forest-v3.jpg" alt="forest-v3">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/frozen-lake.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/frozen-lake.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/frozen-lake.jpg" alt="frozen-lake">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/grim-v1.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/grim-v1.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/grim-v1.jpg" alt="grim-v1">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/grim-v2.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/grim-v2.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/grim-v2.jpg" alt="grim-v2">
+                    </picture>
+
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/imagination.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/imagination.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/imagination.jpg" alt="imagination">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/lake.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/lake.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/lake.jpg" alt="lake">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/leaves-v1.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/leaves-v1.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/leaves-v1.jpg" alt="leaves-v1">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/leaves-v2.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/leaves-v2.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/leaves-v2.jpg" alt="leaves-v2">
+                    </picture>
+
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/leaves-v3.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/leaves-v3.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/leaves-v3.jpg" alt="leaves-v3">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/leaves-v4.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/leaves-v4.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/leaves-v4.jpg" alt="leaves-v4">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/pretty-little-thing.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/pretty-little-thing.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/Pretty-little-thing.jpg" alt="pretty-little-thing">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700"itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/ruins-v1.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/ruins-v1.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/ruins-v1.jpg" alt="ruins-v1">
+                    </picture>
+
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/ruins-v2.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/ruins-v2.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/ruins-v2.jpg" alt="ruins-v2">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/texture.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/texture.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/texture.jpg" alt="texture">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/wood.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/wood.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/wood.jpg" alt="wood">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700"itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/sparkling.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/sparkling.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/sparkling.jpg" alt="sparkling">
+                    </picture>
+                </div>
+
+                <!-- Placing the button underneath the hidden gallery so that it's not in the middle between images -->
+                <div class="container-fluid" alt="Expand gallery" role="button">
+                    <!-- d-grid and mx-auto centers the button -->
+                    <button class="btn btn-primary d-grid mx-auto btn-success opacity-50" style="margin-top: 3%; color: #ace747;" data-bs-toggle="collapse" data-bs-target="#NatureGal">
+                        <span style="font-weight: bold;" class="mx-auto">Expand Nature Gallery</span>
+                    </button>
+                </div>
+            </div>
+            
+            <br>
+
+            <!-- Architecture gallery -->
+            <div alt="architecture gallery" id="Architectures">
+                <h2 data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" class="text-center fw-bold" style="margin-top: 100px;">Architecture</h2>
+
+                <!-- For medium/Large screens, every row has 3 columns (1 per img) with row gaps and centered images. Small screens (mobile) has 2 columns per row -->
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 row-gap-3 text-center" style="justify-content: space-between; margin-top: 50px;">
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/after-the-storm.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/after-the-storm.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/after-the-storm.jpg" alt="after-the-storm">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/ruins-v1.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/ruins-v1.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/ruins-v1.jpg" alt="ruins-v1">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/along-the-wall.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/along-the-wall.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/along-the-wall.jpg" alt="balcony">
+                    </picture>
+
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/endless.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/endless.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/endless.jpg" alt="endless">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/bar.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/bar.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/bar.jpg" alt="bar">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/perspective.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/perspective.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/perspective.jpg" alt="perspective">
+                    </picture>
+                </div>
+
+                <!-- Expanded content -->
+                <!-- AOS animations are only playing at small width size? Might be a clipping issue and animations are playing before they're seen -->
+                <div class="collapse row row-cols-2 row-cols-md-4 row-cols-lg-4 row-gap-3 text-center" style="justify-content: space-between; margin-top: 18px;" id="ArchitectureGal">
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/the-shining.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/the-shining.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/The-Shining.jpg" alt="The-Shining">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/deck-v1.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/deck-v1.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/deck-v1.jpg" alt="deck-v1">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/gazebo.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/gazebo.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/gazebo.jpg" alt="gazebo">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/liminal.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/liminal.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/liminal.jpg" alt="liminal">
+                    </picture>
+
+                    <!-- Img1 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/the-dropper.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/the-dropper.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/The-Dropper.jpg" alt="the-dropper">
+                    </picture>
+                    <!-- Img2 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="600" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/The-Dropper-v2.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/The-Dropper-v2.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/The-Dropper-v2.jpg" alt="The-Dropper-v2">
+                    </picture>
+                    <!-- Img3 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/spiral.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/spiral.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/spiral.jpg" alt="spiral">
+                    </picture>
+                    <!-- Img4 -->
+                    <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
+                        <source media="(max-width:1200px)" srcset="images/img1200px/building-lines.jpg">
+                        <source media="(max-width:600px)" srcset="images/img600px/building-lines.jpg">
+                        <img role="img" class="rounded-1" style="width: 90%;" src="images/img1200px/building-lines.jpg" alt="building-lines">
+                    </picture>
+                </div>
+
+                <!-- Placing the button underneath the hidden gallery so that it's not in the middle between images -->
+                <div class="container-fluid" alt="Expand gallery" role="button">
+                    <!-- data-bs-toggle=collapse will cause the img gallery to to expand when targeting #portraitgal section -->
+                    <!-- d-grid and mx-auto centers the button -->
+                    <button class="btn btn-primary d-grid mx-auto btn-success opacity-50" style="margin-top: 3%; color: #ace747;" data-bs-toggle="collapse" data-bs-target="#ArchitectureGal">
+                        <span style="font-weight: bold;" class="mx-auto">Expand Architecture Gallery</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer style="background: #efd7bb;">
+            <div class="text-center" style="margin-top: 50px; padding-top: 50px; padding-bottom: 50px;">
+
+                <!-- Social media icons from fontawesome -->
+                <div id="Socials" class="d-block gap-2 row-gap-2 text-center" alt="Socials" role="link" itemscope itemtype="https://schema.org/SocialMediaPosting">
+                    <a itemprop="url" href="https://twitter.com" class="btn text-black-50 btn-primary mx-auto bg-transparent border-0" role="button" style="font-size: 1.4rem;"><i class="fa-brands fa-twitter"></i></button></a>
+                    <a itemprop="url" href="https://instagram.com" class="btn text-black-50 btn-primary mx-auto bg-transparent border-0" role="button" style="font-size: 1.4rem;"><i class="fa-brands fa-instagram"></i></a>
+                    <a itemprop="url" href="https://youtube.com" class="btn text-black-50 btn-primary mx-auto bg-transparent border-0" role="button" style="font-size: 1.4rem;"><i class="fa-brands fa-youtube"></i></a>
+                    <a itemprop="url" href="https://facebook.com" class="btn text-black-50 btn-primary mx-auto bg-transparent border-0" role="button" style="font-size: 1.4rem;"><i class="fa-brands fa-facebook"></i></a>
+                    <a itemprop="url" href="mailto:will1117@algonquinlive.com" class="btn text-black-50 btn-primary mx-auto bg-transparent border-0" role="button" style="font-size: 1.4rem;"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
+                <p class="text-black-50">Copyright &#169; Kianna Willmore, 2023</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html>
