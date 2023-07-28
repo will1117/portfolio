@@ -53,16 +53,19 @@
                 </div>
 
                 <!-- Navigation that turns into hamburger at medium/small screen width -->
+                <!-- navbar-expand-lg will display all menu items inline when at desktop size and "menu" button will dissapear -->
                 <nav id="Menu" class="navbar navbar-expand-lg" role="navigation">
                     <!-- Container -->
                     <div class="container-fluid">
                         <!-- Drop down button. mx-auto centers items -->
+                        <!-- navbar-toggler and data-bs-toggle will turn button into navigation dropdown -->
                         <button alt="Menu dropdown" style="margin-bottom: 10px; margin-top: 10px;" class="mx-auto bg-light navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#navbarNavAltMarkup">
                             <!-- Adds hamburger -->
                             <span style="padding-left: 40px; padding-right: 40px; font-weight: bold;">Menu</span>
                         </button>
 
                         <!-- Drop down items -->
+                        <!-- collapse = collapses items, navbar-collapse classifies it as a navigation dropdown -->
                         <div alt="Menu items" class="collapse navbar-collapse text-center fw-bold" id="navbarNavAltMarkup">
                             <div class="navbar-nav nav-pills grid gap-2 row-gap-2 mx-auto">
                                 <a class="nav-link active bg-light mx-auto" style="width: 200px;" href="#" aria-current="page">Portfolio</a>
@@ -82,9 +85,11 @@
 
             <!-- Portraits gallery -->
             <div alt="portraits gallery" id="Portraits">
+                <!-- data-aos is for the library animations -->
                 <h2 data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" class="text-center fw-bold" style="margin-top: 100px;">Portraits</h2>
 
                 <!-- For medium/Large screens, every row has 4 columns (1 per img) with row gaps and centered images. Small screens (mobile) has 2 columns per row -->
+                <!-- At max-width 1200px, 1200px images are used, and vise versa with 600px max-width -->
                 <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 row-gap-3 text-center" style="justify-content: space-between; margin-top: 50px; width: auto;">
                     <!-- Img1 -->
                     <picture data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="700" itemprop="image" class="col">
